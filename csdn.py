@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import random
 import time
-import re
-import threading
 import logging
 import datetime
 import os
@@ -148,7 +146,7 @@ def clean_log_by_day(today):
 
 cnt = 0
 urls = []
-my_website = "https://blog.csdn.net/******/" #将******替换成自己博客主界面的url
+my_website = "https://blog.csdn.net/******/" # 将******替换成自己的博客主页 url
 ua = UserAgent()
 
 def run():
